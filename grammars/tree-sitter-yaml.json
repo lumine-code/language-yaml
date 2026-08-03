@@ -1,7 +1,7 @@
 {
   "name": "YAML",
   "scopeName": "source.yaml",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-yaml",
   "injectionRegex": "yml|yaml|YML|YAML",
   "treeSitter": {
