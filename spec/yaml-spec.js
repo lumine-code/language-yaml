@@ -2,10 +2,10 @@ describe("YAML grammar", function () {
   let grammar = null;
 
   beforeEach(function () {
-    atom.config.set("language.useTreeSitterParsers", false);
-    waitsForPromise(() => atom.packages.activatePackage("language-yaml"));
+    lumine.config.set("language.useTreeSitterParsers", false);
+    waitsForPromise(() => lumine.packages.activatePackage("language-yaml"));
 
-    runs(() => (grammar = atom.grammars.grammarForScopeName("source.yaml")));
+    runs(() => (grammar = lumine.grammars.grammarForScopeName("source.yaml")));
   });
 
   it("parses the grammar", function () {
@@ -14,12 +14,12 @@ describe("YAML grammar", function () {
   });
 
   it("selects the grammar for cloud config files", function () {
-    waitsForPromise(() => atom.workspace.open("cloud.config"));
+    waitsForPromise(() => lumine.workspace.open("cloud.config"));
 
     return runs(function () {});
   });
   // TODO: While this seems to return a Grammar Registery, they do not match exactly and this should be further reviewed.
-  //expect(atom.workspace.getActiveTextEditor().getGrammar()).toBe grammar
+  //expect(lumine.workspace.getActiveTextEditor().getGrammar()).toBe grammar
 
   describe("strings", function () {
     describe("double quoted", function () {
