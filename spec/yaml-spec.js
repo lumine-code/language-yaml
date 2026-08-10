@@ -1,11 +1,11 @@
 describe("YAML grammar", function () {
   let grammar = null;
 
-  beforeEach(function () {
+  beforeEach(async () => {
     lumine.config.set("language.useTreeSitterParsers", false);
-    waitsForPromise(() => lumine.packages.activatePackage("language-yaml"));
+    await lumine.packages.activatePackage("language-yaml");
 
-    runs(() => (grammar = lumine.grammars.grammarForScopeName("source.yaml")));
+    grammar = lumine.grammars.grammarForScopeName("source.yaml");
   });
 
   it("parses the grammar", function () {
@@ -13,10 +13,8 @@ describe("YAML grammar", function () {
     expect(grammar.scopeName).toBe("source.yaml");
   });
 
-  it("selects the grammar for cloud config files", function () {
-    waitsForPromise(() => lumine.workspace.open("cloud.config"));
-
-    return runs(function () {});
+  it("selects the grammar for cloud config files", async () => {
+    await lumine.workspace.open("cloud.config");
   });
   // TODO: While this seems to return a Grammar Registery, they do not match exactly and this should be further reviewed.
   //expect(lumine.workspace.getActiveTextEditor().getGrammar()).toBe grammar
