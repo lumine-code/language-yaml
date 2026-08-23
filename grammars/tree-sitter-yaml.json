@@ -6,7 +6,7 @@
   "injectionRegex": "yml|yaml|YML|YAML",
   "treeSitter": {
     "parserSource": "github:tree-sitter-grammars/tree-sitter-yaml#v0.7.2",
-    "wasmBuildTool": "tree-sitter-cli#v0.26.11",
+    "wasmBuildTool": "tree-sitter-cli#v0.26.13",
     "grammar": "tree-sitter/tree-sitter-yaml.wasm",
     "highlightsQuery": "tree-sitter/highlights.scm",
     "foldsQuery": "tree-sitter/folds.scm",
