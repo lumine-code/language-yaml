@@ -2,7 +2,7 @@ describe("YAML grammar", function () {
   let grammar = null;
 
   beforeEach(async () => {
-    lumine.config.set("language.useTreeSitterParsers", false);
+    lumine.config.set("editor.useTreeSitterParsers", false);
     await lumine.packages.activatePackage("language-yaml");
 
     grammar = lumine.grammars.grammarForScopeName("source.yaml");

@@ -1,7 +1,6 @@
 {
   ".source.yaml": {
-    "language": {
-      "autoIndentOnPaste": false,
+    "editor": {
       "commentStart": "# ",
       "commentDelimiters": {
         "line": "#"
@@ -9,6 +8,7 @@
       "foldEndPattern": "^\\s*$|^\\s*\\}|^\\s*\\]|^\\s*\\)",
       "increaseIndentPattern": "^\\s*.*(:|-) ?(&\\w+)?(\\{[^}\"']*|\\([^)\"']*)?$",
       "decreaseIndentPattern": "^\\s+\\}$",
+      "autoIndentOnPaste": false,
       "tabType": "soft"
     }
   }
