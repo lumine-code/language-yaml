@@ -5,7 +5,9 @@
   "parser": "tree-sitter-yaml",
   "injectionRegex": "yml|yaml|YML|YAML",
   "treeSitter": {
-    "parserSource": "github:tree-sitter-grammars/tree-sitter-yaml#v0.7.2",
+    // Head of upstream PR #35: widens external-scanner row state so documents
+    // beyond 32,768 lines do not overflow back into parse errors.
+    "parserSource": "github:glowcloud/tree-sitter-yaml#8025f83a294d829769d9a99132105bcd68fbaee6",
     "wasmBuildTool": "tree-sitter-cli#v0.26.13",
     "grammar": "tree-sitter/tree-sitter-yaml.wasm",
     "highlightsQuery": "tree-sitter/highlights.scm",
