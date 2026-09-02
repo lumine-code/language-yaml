@@ -8,7 +8,7 @@
     // Head of upstream PR #35: widens external-scanner row state so documents
     // beyond 32,768 lines do not overflow back into parse errors.
     "parserSource": "github:glowcloud/tree-sitter-yaml#8025f83a294d829769d9a99132105bcd68fbaee6",
-    "wasmBuildTool": "tree-sitter-cli#v0.26.13",
+    "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "yaml.wasm",
     "highlightsQuery": "yaml-highlights.scm",
     "foldsQuery": "yaml-folds.scm",
