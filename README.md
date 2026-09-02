@@ -4,7 +4,7 @@ YAML language support.
 
 ## Features
 
-- **Grammars**: provides Tree-sitter grammars built from [tree-sitter-yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml) and TextMate grammars derived from [atom/language-yaml](https://github.com/atom/language-yaml).
+- **Grammars**: provides a Tree-sitter grammar built from [tree-sitter-yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml).
 - **Syntax highlighting**: full grammar coverage for YAML files.
 
 ## Installation

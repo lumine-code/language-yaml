@@ -5,9 +5,6 @@
       "commentDelimiters": {
         "line": "#"
       },
-      "foldEndPattern": "^\\s*$|^\\s*\\}|^\\s*\\]|^\\s*\\)",
-      "increaseIndentPattern": "^\\s*.*(:|-) ?(&\\w+)?(\\{[^}\"']*|\\([^)\"']*)?$",
-      "decreaseIndentPattern": "^\\s+\\}$",
       "autoIndentOnPaste": false,
       "tabType": "soft"
     }

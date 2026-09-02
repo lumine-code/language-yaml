@@ -1,6 +1,5 @@
 describe("Tree-sitter YAML grammar", () => {
   beforeEach(async () => {
-    lumine.config.set("editor.useTreeSitterParsers", true);
     await lumine.packages.activatePackage("language-yaml");
   });
 
