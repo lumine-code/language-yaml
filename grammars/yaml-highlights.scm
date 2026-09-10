@@ -77,15 +77,19 @@
 ; PUNCTUATION
 ; ===========
 
-(flow_sequence "["
-  @punctuation.definition.sequence.begin.bracket.square.yaml)
-(flow_sequence "]"
-  @punctuation.definition.sequence.end.bracket.square.yaml)
+("[" @punctuation.definition.sequence.begin.bracket.square.yaml
+  (#is? test.childOfType flow_sequence)
+  (#is? test.first true))
+("]" @punctuation.definition.sequence.end.bracket.square.yaml
+  (#is? test.childOfType flow_sequence)
+  (#is? test.last true))
 
-(flow_mapping "{"
-  @punctuation.definition.dictionary.begin.bracket.curly.yaml)
-(flow_mapping "}"
-  @punctuation.definition.dictionary.end.bracket.curly.yaml)
+("{" @punctuation.definition.dictionary.begin.bracket.curly.yaml
+  (#is? test.childOfType flow_mapping)
+  (#is? test.first true))
+("}" @punctuation.definition.dictionary.end.bracket.curly.yaml
+  (#is? test.childOfType flow_mapping)
+  (#is? test.last true))
 
 (block_mapping_pair
   ":" @punctuation.separator.key-value.yaml)
