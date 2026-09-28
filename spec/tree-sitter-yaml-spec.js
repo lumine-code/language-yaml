@@ -14,8 +14,8 @@ describe("Tree-sitter YAML grammar", () => {
     editor.setGrammar(lumine.grammars.grammarForScopeName("source.yaml"));
     await editor.getBuffer().languageMode.ready;
 
-    const rootNode = editor.getBuffer().languageMode.tree.rootNode;
+    const rootNode = editor.getSyntaxNodeAtBufferPosition([0, 0], (node) => node.parent == null);
     expect(rootNode.endPosition.row).toBe(32768);
-    expect(rootNode.hasError).toBe(false);
+    expect((await editor.getSyntaxDiagnostics()).hasError).toBe(false);
   });
 });

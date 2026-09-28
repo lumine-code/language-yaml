@@ -19,12 +19,12 @@ describe("YAML Tree-sitter highlights", () => {
     await editor.getBuffer().languageMode.ready;
   }
 
-  function rawCaptures(startRow, endRow) {
-    const layer = editor.getBuffer().languageMode.rootLanguageLayer;
-    return layer.queries.highlightsQuery.captures(layer.tree.rootNode, {
+  async function rawCaptures(startRow, endRow) {
+    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
       startPosition: new Point(startRow, 0),
       endPosition: new Point(endRow, 0),
     });
+    return groups.find(({ grammar }) => grammar === editor.getGrammar())?.captures ?? [];
   }
 
   function expectLocalTile(captures) {
@@ -59,7 +59,7 @@ describe("YAML Tree-sitter highlights", () => {
     }
     sequence.push("]");
     await setUp(sequence.join("\r\n"));
-    expectLocalTile(rawCaptures(3000, 3006));
+    expectLocalTile(await rawCaptures(3000, 3006));
 
     const mapping = ["{"];
     for (let index = 0; index < 6000; index++) {
@@ -68,7 +68,7 @@ describe("YAML Tree-sitter highlights", () => {
     mapping.push("}");
     editor.setText(mapping.join("\r\n"));
     await editor.getBuffer().languageMode.atTransactionEnd();
-    expectLocalTile(rawCaptures(3000, 3006));
+    expectLocalTile(await rawCaptures(3000, 3006));
 
     const query = fs.readFileSync(HIGHLIGHTS_PATH, "utf8");
     expect(query).toContain("(#is? test.childOfType flow_sequence)");
