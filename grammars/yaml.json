@@ -13,7 +13,8 @@
     "highlightsQuery": "yaml-highlights.scm",
     "foldsQuery": "yaml-folds.scm",
     "indentsQuery": "yaml-indents.scm",
-    "tagsQuery": "yaml-tags.scm"
+    "tagsQuery": "yaml-tags.scm",
+    "injectionsQuery": "yaml-injections.scm"
   },
   "firstLineRegex": ["^(#cloud-config|---)"],
   "fileTypes": [

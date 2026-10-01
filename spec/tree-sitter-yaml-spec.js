@@ -16,6 +16,6 @@ describe("Tree-sitter YAML grammar", () => {
 
     const rootNode = editor.getSyntaxNodeAtBufferPosition([0, 0], (node) => node.parent == null);
     expect(rootNode.endPosition.row).toBe(32768);
-    expect((await editor.getSyntaxDiagnostics()).hasError).toBe(false);
+    expect(editor.languageMode.tree.rootNode.hasError).toBe(false);
   });
 });

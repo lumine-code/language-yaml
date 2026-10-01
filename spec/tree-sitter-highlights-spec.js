@@ -20,11 +20,11 @@ describe("YAML Tree-sitter highlights", () => {
   }
 
   async function rawCaptures(startRow, endRow) {
-    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
+    const query = await editor.getGrammar().getQuery("highlightsQuery");
+    return query.captures(editor.languageMode.tree.rootNode, {
       startPosition: new Point(startRow, 0),
       endPosition: new Point(endRow, 0),
     });
-    return groups.find(({ grammar }) => grammar === editor.getGrammar())?.captures ?? [];
   }
 
   function expectLocalTile(captures) {
