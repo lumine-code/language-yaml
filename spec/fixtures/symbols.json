@@ -1,0 +1,16 @@
+{
+  "source.yaml": {
+    "text": "server:\n  port: 8080\n",
+    "symbols": [
+      {
+        "name": "server",
+        "tag": "property"
+      },
+      {
+        "name": "server.port",
+        "tag": "property"
+      }
+    ],
+    "only": true
+  }
+}
