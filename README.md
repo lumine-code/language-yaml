@@ -2,6 +2,8 @@
 
 YAML language support.
 
+Fork of [pulsar-edit/pulsar](https://github.com/pulsar-edit/pulsar) (`packages/language-yaml`).
+
 ## Features
 
 - **Grammars**: provides a Tree-sitter grammar built from [tree-sitter-yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml).
