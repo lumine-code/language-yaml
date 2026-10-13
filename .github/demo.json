@@ -1,0 +1,16 @@
+{
+  "title": "language-yaml",
+  "description": "YAML syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "3676d3c1894a17c1a5f8cc68271e23776e405999",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "YAML syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 560
+    }
+  ]
+}

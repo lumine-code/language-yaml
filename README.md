@@ -9,6 +9,8 @@ Fork of [pulsar-edit/pulsar](https://github.com/pulsar-edit/pulsar) (`packages/l
 - **Grammars**: provides a Tree-sitter grammar built from [tree-sitter-yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml).
 - **Syntax highlighting**: full grammar coverage for YAML files.
 
+![YAML syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-yaml` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-yaml`.
