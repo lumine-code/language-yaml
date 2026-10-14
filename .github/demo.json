@@ -1,16 +1,61 @@
 {
   "title": "language-yaml",
-  "description": "YAML syntax highlighting in the editor.",
-  "recordedOn": "2026-10-13",
-  "sourceRevision": "3676d3c1894a17c1a5f8cc68271e23776e405999",
+  "description": "YAML syntax highlighting at the default editor font size.",
+  "recordedOn": "2026-10-14",
+  "sourceRevision": "85a058803ab092756b35c42631c1f4d59887905e",
+  "themeSourceRevision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
   "mode": "normal",
   "fontSettings": "default",
+  "scenario": "demo.js",
+  "recipeHash": "1de67e5066103454ecc45be0746d2ffae0a2d2df1532a551ccc69fbe206f83ca",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "44.7.0",
+    "chrome": "152.0.7977.130",
+    "devicePixelRatio": 1,
+    "locale": "en-GB",
+    "fontFamily": "Fira Code, Menlo, DejaVu Sans Mono, Consolas, monospace",
+    "fontSize": 14,
+    "themes": ["one-day-syntax", "one-day-ui"]
+  },
+  "viewport": { "width": 1100, "height": 560 },
+  "cornerRadius": 10,
+  "sources": {
+    "editor": {
+      "revision": "0362a9fac7d6e153a768c0381800d6f3eb06647a",
+      "dirty": true,
+      "workingTreeHash": "c4defaf459f08a90cb1517ff7c04fdeeae7e7de98030f65415ee09a97572e9a7"
+    },
+    "package": {
+      "revision": "85a058803ab092756b35c42631c1f4d59887905e",
+      "dirty": true,
+      "workingTreeHash": "606f77937d38ddda795a21ece829f168a63b9a0aa70516835425c1076ec05e6e"
+    },
+    "language-yaml": {
+      "revision": "85a058803ab092756b35c42631c1f4d59887905e",
+      "dirty": true,
+      "workingTreeHash": "606f77937d38ddda795a21ece829f168a63b9a0aa70516835425c1076ec05e6e"
+    },
+    "one-theme": {
+      "revision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
+      "dirty": true,
+      "workingTreeHash": "50ec2f83a6347dd8113870992ec4eb2be4014f3d9e12213c2f51b543f1eca793"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "project.yaml",
+      "sha256": "ffaae3fc851bdf18df372975d4de08009ed366908d26bb0e14bbc4f06d0740c5"
+    }
+  ],
   "images": [
     {
       "file": "demo.png",
       "label": "YAML syntax highlighting at the default editor font size.",
       "width": 1100,
-      "height": 560
+      "height": 560,
+      "sha256": "cf83dd3b5fe17dc0af9a402c0a9570de7f914d78c4ed71b762c8ef4db0cc6ed5"
     }
   ]
 }
