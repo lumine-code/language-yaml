@@ -1,0 +1,20 @@
+name: Signal Lab
+version: 1
+enabled: true
+
+# Project settings
+editor:
+  tabSize: 2
+  softWrap: false
+
+experiments:
+  - name: reference
+    frequency: 2
+    window: 7
+  - name: smooth
+    frequency: 4
+    window: 12
+
+output:
+  formats: [csv, json]
+  directory: ./results
