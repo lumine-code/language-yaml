@@ -8,3 +8,9 @@
   (#set! injection.language "todo")
   (#set! injection.language-scope "none")
   (#set! injection.include-children))
+
+([(string_scalar) (single_quote_scalar) (double_quote_scalar) (block_scalar)]
+  @injection.owner @injection.content
+  (#set! injection.language "hyperlink")
+  (#set! injection.language-scope "none")
+  (#set! injection.include-children))
