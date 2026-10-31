@@ -7,6 +7,10 @@
       },
       "autoIndentOnPaste": false,
       "tabType": "soft"
+    },
+    "bracket-matcher": {
+      "autocompleteCharacters": ["[]", "{}", "\"\"", "''"],
+      "pairsWithExtraNewline": ["[]", "{}"]
     }
   }
 }

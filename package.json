@@ -42,6 +42,7 @@
   },
   "specPackages": [
     "language-hyperlink",
-    "symbol-tree-sitter"
+    "symbol-tree-sitter",
+    "bracket-matcher"
   ]
 }
