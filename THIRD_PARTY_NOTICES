@@ -69,6 +69,9 @@ suitability for any purpose.
 Source: https://github.com/glowcloud/tree-sitter-yaml
 Revision: 8025f83a294d829769d9a99132105bcd68fbaee6
 
+Parser source: github:glowcloud/tree-sitter-yaml#8025f83a294d829769d9a99132105bcd68fbaee6
+Resolved commit: 8025f83a294d829769d9a99132105bcd68fbaee6
+
 Original file: LICENSE
 
 Copyright (c) 2024 tree-sitter-grammars contributors
